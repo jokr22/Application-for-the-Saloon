@@ -4,6 +4,7 @@ const dotenv = require("dotenv");
 const serviceRoutes = require("./routes/serviceRoutes");
 const appointmentRoutes = require("./routes/appointmentRoutes");
 const galleryRoutes = require("./routes/galleryRoutes");
+const seedGallery = require("./seed");
 
 dotenv.config();
 
@@ -25,8 +26,9 @@ app.get("/", (req, res) => {
 });
 
 // Start server
-app.listen(PORT, () => {
+app.listen(PORT, async () => {
   console.log(`Server running on port ${PORT}`);
+  await seedGallery();
 });
 
 module.exports = app;
