@@ -100,7 +100,7 @@ psql -U postgres -f src/schema.sql
 PORT=5000
 DB_USER=postgres
 DB_HOST=localhost
-DB_NAME=apon_saloon
+DB_NAME=navy_anchorage
 DB_PASSWORD=postgres
 DB_PORT=5432
 ```
@@ -137,29 +137,7 @@ npm run dev
 
 4. Open your browser and visit: http://localhost:3000
 
-## API Endpoints
 
-### Services
-
-- `GET /api/services` - Get all services
-- `GET /api/services/:id` - Get service by ID
-- `POST /api/services` - Create new service
-- `PUT /api/services/:id` - Update service
-- `DELETE /api/services/:id` - Delete service
-
-### Appointments
-
-- `GET /api/appointments` - Get all appointments
-- `GET /api/appointments/:id` - Get appointment by ID
-- `POST /api/appointments` - Create new appointment
-- `PUT /api/appointments/:id` - Update appointment status
-- `DELETE /api/appointments/:id` - Cancel appointment
-
-### Gallery
-
-- `GET /api/gallery` - Get all gallery images
-- `POST /api/gallery` - Add new gallery image
-- `DELETE /api/gallery/:id` - Delete gallery image
 
 ## License
 
