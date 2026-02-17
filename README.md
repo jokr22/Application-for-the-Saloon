@@ -100,7 +100,7 @@ psql -U postgres -f src/schema.sql
 PORT=5000
 DB_USER=postgres
 DB_HOST=localhost
-DB_NAME=navy_anchorage
+DB_NAME=apon_saloon
 DB_PASSWORD=postgres
 DB_PORT=5432
 ```
